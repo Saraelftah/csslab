@@ -1,16 +1,15 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* general */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family: 'Poppins', sans-serif;
-     color: #282938;
+body {
+    font-family: "Poppins", sans-serif;
+    color: #282938;
 }
 
 ul {
@@ -31,6 +30,14 @@ p {
     font-weight: 400;
     opacity: 70%;
 }
+
+h1 {
+    line-height: 74px;
+    font-weight: 600;
+    font-size: 54px;
+    margin-bottom: 31px;
+}
+
 h2 {
     font-size: 48px;
     font-weight: 600;
@@ -48,6 +55,8 @@ h4 {
     font-size: 24px;
     font-weight: 500;
     line-height: 36px;
+    margin-bottom: 5px;
+
 }
 
 h5 {
@@ -73,11 +82,11 @@ section {
 }
 
 /* nav bar */
-.navbar{
-    background-color:  #1C1E53;
+.navbar {
+    background-color: #1c1e53;
 }
 
-.navbar .container{
+.navbar .container {
     padding: 16px 0px;
     display: flex;
     justify-content: space-between;
@@ -98,14 +107,13 @@ section {
     justify-content: center;
     align-items: center;
 }
+
 .navbar__list li {
-    text-transform: capitalize; 
+    text-transform: capitalize;
 }
 
-
-.navbar__list li a{
-
-    color: #BBBBCB;
+.navbar__list li a {
+    color: #bbbbcb;
     font-weight: 500;
     font-size: 16px;
     line-height: 28px;
@@ -117,7 +125,7 @@ section {
     font-weight: 500;
 }
 
-.navbar__list li .upper{
+.navbar__list li .upper {
     text-transform: uppercase;
 }
 
@@ -126,9 +134,9 @@ section {
 }
 
 .navbar__btn {
-    border: 2px solid #F4F6FC33;
+    border: 2px solid #f4f6fc33;
     border-radius: 41px;
-    padding: 16px 48px; 
+    padding: 16px 48px;
     transition: 0.5s;
     font-weight: 500;
     font-size: 16px;
@@ -136,48 +144,60 @@ section {
 }
 
 .navbar__btn:hover {
-
-    color: #1C1E53;
+    color: #1c1e53;
     background-color: #fff;
 }
 
+/* burger menu */
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.burger span {
+    height: 3px;
+    width: 25px;
+    background: #fff;
+    border-radius: 2px;
+}
+
+/* about us */
 .aboutus_hero .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  
 }
-.aboutus__content, .aboutus__img {
+
+.aboutus__content,
+.aboutus__img {
     width: 45%;
 }
 
-.aboutus__content h1 {
-    line-height: 74px;
-    font-weight: 600;
-    font-size: 54px;
-    margin-bottom: 31px;
-}
-
 /* who we are */
-.whoweare{
+.whoweare {
     padding: 0;
 }
-.whoweare .container{
+
+.whoweare .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.whoweare__content{
+.whoweare__content {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #F4F5F5;
+    background-color: #f4f5f5;
     padding: 80px 0;
+    gap: 10px;
 }
 
-.whoweare__content__goal, .whoweare__content__improvement {
+.whoweare__content__goal,
+.whoweare__content__improvement {
     width: 42%;
 }
 
@@ -188,14 +208,15 @@ section {
 .process h2 {
     text-align: center;
 }
+
 .process__items {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 32px;
     margin-top: 48px;
-   
 }
+
 
 .process__items .process__item {
     width: 25%;
@@ -204,7 +225,7 @@ section {
 /* mission */
 
 .mission {
-    background-color: #EEF4FA;
+    background-color: #eef4fa;
     /* padding: 128px 0; */
 }
 
@@ -212,27 +233,32 @@ section {
     margin: 16px 0;
 }
 
-.our-mission, .our-vision {
+.our-mission,
+.our-vision {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .our-vision {
     margin-top: 96px;
 }
 
-.our-mission__content, .our-vision__content {
+.our-mission__content,
+.our-vision__content {
     width: 50%;
 }
 
+/* benefits */
 .benefits h2 {
     max-width: 630px;
     margin: auto;
 }
 
-.benefits .container{
+.benefits .container {
     max-width: 1280px;
 }
+
 .benefits__cards {
     display: flex;
     justify-content: space-between;
@@ -241,7 +267,7 @@ section {
 }
 
 .benefit__card {
-    background-color: #F4F6FC;
+    background-color: #f4f6fc;
     width: 30%;
     padding: 52px 32px 48px 48px;
 }
@@ -265,28 +291,26 @@ section {
 
 /* meet our team */
 .our-team {
-    background-color: #F4F6FC;
+    background-color: #f4f6fc;
 }
 
 .our-team h2 {
-    margin-bottom: 48px; 
+    margin-bottom: 48px;
 }
 
 .row {
     display: flex;
     justify-content: center;
-    align-items: center; 
-    flex-wrap: wrap; 
-} 
-
-.our-team__item {
-   
-    width: 25%;
-    padding: 0 16px;
-    
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.our-team__card{
+.our-team__item {
+    width: 25%;
+    padding: 0 16px;
+}
+
+.our-team__card {
     background-color: #fff;
     text-align: center;
     display: flex;
@@ -312,12 +336,12 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, #5239FA, transparent);
+    background: linear-gradient(to top, #5239fa, transparent);
     opacity: 0;
     transition: 0.5s;
 }
 
-.our-team__img img{
+.our-team__img img {
     height: 100%;
     object-fit: cover;
 }
@@ -327,18 +351,17 @@ section {
     width: 100%;
     height: 100%;
     top: 127px;
-    z-index: 4;  
+    z-index: 4;
     opacity: 0;
     transition: 0.5s;
 }
 
-.our-team__img .overlay a{
+.our-team__img .overlay a {
     width: 13px;
     height: 13px;
-
 }
 
-.our-team__img:hover .overlay{
+.our-team__img:hover .overlay {
     opacity: 1;
 }
 
@@ -349,17 +372,20 @@ section {
 
 /* footer */
 .footer {
-    background-color: #1C1E53;
+    background-color: #1c1e53;
 }
-.footer .container{
+
+.footer .container {
     padding: 96px 0 0;
 }
+
 .footer .footer__content {
     color: #fff;
     display: flex;
     justify-content: space-between;
     width: 90%;
 }
+
 .footer__logo,
 .footer__talk {
     width: 40%;
@@ -375,16 +401,14 @@ section {
     margin-bottom: 14px;
 }
 
-.footer .footer__content p{
+.footer .footer__content p {
     opacity: 80%;
     font-weight: 500;
     margin-bottom: 28px;
 }
 
 .footer__talk h2 {
-   
     text-align: start;
-
 }
 
 .footer__socialicons {
@@ -395,12 +419,12 @@ section {
 }
 
 .footer__contact {
-    background-color: #FCD980;
+    background-color: #fcd980;
     display: flex;
     align-items: center;
     gap: 29px;
     width: 40%;
-    padding: 17px 137px 16px 37px ;
+    padding: 17px 137px 16px 37px;
 }
 
 .footer__contact h5 {
@@ -415,126 +439,173 @@ section {
 /* footer navbar */
 .footer__navbar {
     background-color: #fff;
-    color: #282938
+    color: #282938;
 }
-.footer__navbar__content{
+
+.footer__navbar__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 32px 0;
 }
 
-.footer-list li a{
+.footer-list li a {
     display: inline-block;
     color: #282938;
     transition: 0.5s;
 }
 
-.footer-list li a:hover{
-    color: #1C1E53;
+.footer-list li a:hover {
+    color: #1c1e53;
 }
 
-@media (max-width:992px) {
+/* ==================================== */
+@media (max-width: 1025px) {
 
-   section {
-    padding: 50px 0;
-   }
+    /* navbar */
+    section {
+        padding: 80px 0;
+    }
 
-    .container{
+    .container {
         width: 95%;
     }
 
-    a,p {
+    .navbar {
+        position: relative;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .navbar__content {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #55567a;
+        width: 40%;
+        flex-direction: column;
+        gap: 0;
+        height: 0;
+        overflow: hidden;
+        transition: 0.5s all;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    .navbar__content.show {
+        height: 400px;
+    }
+
+    .navbar__list {
+        flex-direction: column;
+        width: 100%;
+        padding: 16px 0;
+        gap: 16px;
+        align-items: center;
+    }
+
+    .navbar__btn {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+
+    a,
+    p {
         font-size: 14px;
         line-height: 18px;
     }
+
     h2 {
-    font-size: 30px;
-    line-height: 40px;
+        font-size: 30px;
+        line-height: 40px;
     }
 
     h3 {
-    font-size: 24px;
-    line-height: 32px;
+        font-size: 24px;
+        line-height: 32px;
     }
 
     h4 {
-    font-size: 20px;
-    line-height: 24px;
+        font-size: 20px;
+        line-height: 24px;
     }
 
-    h6, h5,
+    h6,
+    h5,
     .navbar__list li a {
-    
         font-size: 14px;
         line-height: 28px;
     }
 
-    .navbar__content {
-        gap: 20px;
-    }
-
-    .navbar__list{
-        width: 60%;
-        gap: 20px;
-        flex-wrap: wrap;   
-    }
-
-    .navbar__btn {
-        padding: 8px 16px; 
-        font-size: 12px;
-    }
-
-    .aboutus__content h1{
+    .aboutus__content h1 {
         line-height: 40px;
         font-size: 32px;
         margin-bottom: 15px;
     }
-  
-    .aboutus_hero .container{
+
+    .aboutus_hero .container {
         justify-content: center;
         flex-wrap: wrap;
         gap: 10px;
     }
 
+    /* process */
     .process__items {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 32px;
-    margin-top: 48px;
-   
+        flex-wrap: wrap;
     }
 
     .process__items .process__item {
         width: 40%;
     }
 
-    .our-mission, .our-vision {
-        flex-wrap: wrap;
-        gap: 20px;
-
+    .mission h3 {
+        margin: 5px 0;
     }
+
+    .our-mission {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .our-vision {
+        flex-direction: column-reverse;
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+
     .mission__img,
     .our-vision__img {
-        width: 40%;
+        width: 80%;
+    }
+
+    .our-mission__content,
+    .our-vision__content {
+        width: 90%;
+    }
+
+
+    /* benefits */
+    .benefits__cards {
+        flex-direction: column;
+        gap: 10px;
     }
 
     .benefit__card {
-    background-color: #F4F6FC;
-    width: 30%;
-    padding: 10px;
-}
+        background-color: #f4f6fc;
+        width: 80%;
+        padding: 10px;
+    }
 
     .card__icon {
         max-width: 32px;
         max-height: 32px;
         margin-bottom: 26px;
-        
     }
 
-    .row{
+    .row {
         flex-wrap: wrap;
     }
 
@@ -542,110 +613,246 @@ section {
         margin-top: 30px;
     }
 
-   .benefets__icons{
-        margin: 20px auto;
-        justify-content: center;
+    .benefets__icons {
+        margin: 40px auto 0;
+        justify-content: space-between;
         gap: 15px;
-        width: 80%;
-   }
-
-    .icon, .users {
-    max-width: 100px;
+        width: 100%;
     }
 
+    .icon,
+    .users {
+        max-width: 120px;
+    }
+
+    /* team */
     .our-team__item {
         width: 40%;
-        padding: 0 16px; 
+        padding: 0 16px;
         margin: 5px 0;
     }
 
     .our-team__img {
-    width: 100px;
-    height: 100px;
+        width: 120px;
+        height: 120px;
     }
 
     .our-team__img .overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 70px;
-    z-index: 4;  
-    opacity: 0;
-    transition: 0.5s;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 80px;
+        z-index: 4;
+        opacity: 0;
+        transition: 0.5s;
     }
-    .our-team__card h4{
-        font-size: 14px;
+
+    .our-team__card h4 {
+        font-size: 16px;
     }
-    .our-team__card p{
-        font-size: 11px;
+
+    .our-team__card p {
+        font-size: 12px;
+    }
+
+    /* footer */
+    .logo,
+    .footer__logo .logo {
+        width: 120px;
+    }
+
+    .footer .container {
+        padding: 30px 0 0;
+    }
+
+    .footer__navbar h6 {
+        font-size: 16px;
+    }
+
+    .footer__talk h2 {
+        font-size: 25px;
+    }
+
+    .footer__contact {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: space-around;
     }
 
     .footer__socialicons {
         gap: 5px;
     }
 
-    .footer__navbar h6{
+    .footer__navbar__content {
+        flex-direction: column-reverse;
+    }
+
+    .footer-list {
+        flex-direction: row;
+    }
+}
+
+
+/* ============================================================== */
+@media (max-width: 992px) {
+    .aboutus__content h1 {
+        line-height: 40px;
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+
+    .aboutus_hero .container {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    /* benefits */
+    .icon,
+    .users {
+        max-width: 100px;
+    }
+
+    /* team */
+    .our-team__img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .our-team__img .overlay {
+        top: 70px;
+    }
+
+    .our-team__card h4 {
+        font-size: 14px;
+    }
+
+    .our-team__card p {
         font-size: 11px;
     }
 
-    .footer__contact {
-        flex-wrap: wrap;
-        padding: 20px ;
+    /* footer */
+    .logo,
+    .footer__logo .logo {
+        width: 100px;
     }
 
+    .footer__navbar h6 {
+        font-size: 12px;
+    }
 }
 
+/* ==================================================================== */
 @media (max-width: 540px) {
-
-    a, p {
-        font-size: 10px;
-        line-height: 15px;
+    section {
+        padding: 30px 0;
     }
 
-    h6, h5,
-    .navbar__list li a {
-    
-        font-size: 10px;
-        line-height: 28px;
+    .aboutus_hero .container {
+        flex-direction: column;
     }
 
-    h2, h3 {
-    font-size: 18px;
-    line-height: 25px;
-    }
-
-    h4 {
-    font-size: 16px;
-    line-height: 22px;
-
-    }
-     .navbar__btn {
-        padding: 5px 10px; 
-        font-size: 10px;
-    }
-
-    .aboutus__content h1{
+    .aboutus__content h1 {
         line-height: 30px;
         font-size: 20px;
         margin-bottom: 15px;
     }
-    .logo,
-    .footer__logo .logo{
-        width: 100px;
+
+    .aboutus__content,
+    .aboutus__img {
+        width: 90%;
     }
-    .footer__navbar h6{
-        font-size: 8px;
+
+    a,
+    p {
+        font-size: 10px;
+        line-height: 15px;
     }
+
+    h6,
+    h5,
+    .navbar__list li a {
+        font-size: 12px;
+        line-height: 28px;
+    }
+
+    h2,
+    h3 {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    h4 {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .navbar__btn {
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+
+    .whoweare__content {
+        flex-direction: column;
+        justify-content: center;
+        padding: 30px 0;
+    }
+
+    .whoweare__content__goal,
+    .whoweare__content__improvement {
+        width: 90%;
+    }
+
+    .whoweare__title {
+        margin-bottom: 5px;
+    }
+
+    .process__items {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .process__items .process__item {
+        width: 80%;
+    }
+
+    .process__items .process__item img {
+        width: 80%;
+    }
+
+    /* our team */
+
+    .our-team h2 {
+        margin-bottom: 20px;
+    }
+
+    .our-team__img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .our-team__item {
+        width: 50%;
+        padding: 0 8px;
+    }
+
+    .our-team__img .overlay {
+        top: 40px;
+    }
+
+    .our-team__img .overlay a {
+        width: 8px;
+        height: 8px;
+    }
+
+    .our-team__card {
+        padding: 30px 25px;
+    }
+
+    .our-team__card h4 {
+        font-size: 10px;
+        font-weight: bold;
+    }
+
 }
-
-
-    
-
-
-
-
-
-
-
-
-
