@@ -492,6 +492,7 @@ section {
         transition: 0.5s all;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
+        z-index: 1000;
     }
 
     .navbar__content.show {
@@ -504,6 +505,7 @@ section {
         padding: 16px 0;
         gap: 16px;
         align-items: center;
+        
     }
 
     .navbar__btn {
@@ -616,8 +618,8 @@ section {
     .benefets__icons {
         margin: 40px auto 0;
         justify-content: space-between;
-        gap: 15px;
-        width: 100%;
+        gap: 20px;
+        width: 90%;
     }
 
     .icon,
